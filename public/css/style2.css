@@ -1,0 +1,13 @@
+body {
+  background-color: #242424 !important;
+}
+
+h1 {
+  color: white !important;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

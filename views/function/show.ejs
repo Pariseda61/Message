@@ -1,0 +1,20 @@
+<%layout("./main/boilerplate")%>
+<div class="introduction col-6 offset-3 mt-3 mb-3">
+  <h1 class="mt-3 mb-3">
+    Hey there! Glad you made it drop your secret, I’m all ears.
+  </h1>
+  <form action="/chat/add" method="get">
+    <button class="btn btn-outline-light mt-3 mb-4">Hit Me</button>
+  </form>
+</div>
+<div class="row cards justify-content-center mt-5">
+  <% for ( let chat of data.slice(0,6)) {%>
+  <div class="card mb-3 col-md-4 col-sm-6 mb-4 d-flex">
+    <div class="card-body w-100 text-center p-3">
+      <h5 class="card-title">Anonymus Person</h5>
+      <p class="card-text"><%=chat.message%></p>
+      <p class="card-text">Hint : <%=chat.hint%></p>
+    </div>
+  </div>
+  <%}%>
+</div>

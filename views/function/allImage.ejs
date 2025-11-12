@@ -1,0 +1,9 @@
+<%layout("/main/boilerplate.ejs")%>
+<h1 class="allimg" style="color: white"><i>Explore the Art Gallery</i></h1>
+<div class="gallery">
+  <% for (let posts of post){%>
+  <a href="/gallery/<%=posts.id%>"
+    ><img src="/gallery/<%=posts.name%>" alt="img"
+  /></a>
+  <%}%>
+</div>

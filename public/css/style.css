@@ -1,0 +1,174 @@
+body {
+  background-color: #242424 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+.container {
+  flex: 1;
+}
+
+.custom-navbar {
+  background-color: #fff;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar a:hover {
+  color: grey !important;
+}
+
+/* about me */
+
+.contact {
+  border: 5px solid white;
+  border-radius: 1rem;
+}
+
+.contact h1 {
+  border: 2.5px solid white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 10px rgba(100, 100, 100, 100);
+}
+
+.about_heading {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-color: #242424;
+}
+
+.myself {
+  padding: 1rem;
+  color: white;
+  text-align: justify;
+}
+
+/* card */
+
+.card {
+  border-radius: 4rem !important;
+  background-color: #1f1515 !important;
+  box-shadow: 0 6px 15px rgba(100, 100, 100, 100);
+}
+
+.card:hover {
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 255);
+}
+
+.card {
+  margin: 0 1rem 0 1rem;
+}
+
+.card-title,
+.card-text {
+  text-align: center;
+  color: white !important;
+}
+
+.introduction {
+  border: 2px solid white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.introduction .btn {
+  width: 8rem;
+  height: 3rem;
+}
+
+.introduction h1 {
+  text-align: center;
+}
+
+/* contact */
+.box {
+  border: 2px solid white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ping {
+  text-align: center;
+}
+
+.icons i {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: white;
+}
+
+/* img */
+
+.world {
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* single image  */
+
+.singleimg {
+  text-align: center;
+  color: white;
+}
+
+.allimg {
+  text-align: center;
+}
+
+.oneimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.oneimg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* send message  */
+.message h3 {
+  text-align: center;
+}

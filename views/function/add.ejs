@@ -1,0 +1,24 @@
+<%layout("./main/boilerplate")%>
+<div class="row">
+    <div class=" message col-6 offset-3 mt-3">
+        <% if (success && success.length) { %>
+            <div class="alert alert-primary  alert-dismissible"><%= success %></div>
+        <% } %>
+        <h3 style="color:white">Write your Message.... Tension maat lo kisko nhi bataunga</h3>
+        <form action="/chat/add" method="POST">
+            <div>
+                <label style="color:white" class="form-label"><b>Message : </b></label><br>
+                <textarea class="form-control" name="message" placeholder="Enter your Secret messgae" cols="50" rows="5" required></textarea><br>
+                <div class="invalid-feedback">Please Enter a Short Description</div>
+            </div>
+            
+            <div>
+                <label style="color:white" class="form-label"><b>Hint : </b></label><br>
+                <input class="form-control" name="hint" type="text" placeholder="Hint of our relation" required></textarea><br><br>
+                <div class="invalid-feedback">Please Enter a Short Description</div>
+                <button class="btn btn-outline-light" type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
